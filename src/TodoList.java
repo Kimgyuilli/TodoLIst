@@ -40,7 +40,7 @@ public class TodoList {
                 case "4":
                     /*저장 기능*/
                     SaveFile();
-
+                    plag = false;
                     break;
                 default:
                     System.out.println("올바르지 않은 입력입니다.");
@@ -102,5 +102,6 @@ public class TodoList {
         } catch (IOException e) {
             System.out.println("파일 저장 중 오류가 발생했습니다.");
         }
+        System.out.println("저장 완료");
     }
 }
